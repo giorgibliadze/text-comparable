@@ -131,7 +131,7 @@ function NavItem({ Icon, label, active, onClick, variant }) {
 
 function Brand({ brand }) {
     return (
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2  lg:mt-[60px]">
             <div className="w-9 h-9 rounded-xl bg-white/10 grid place-items-center">
                 <span className="text-xl">🦉</span>
             </div>
