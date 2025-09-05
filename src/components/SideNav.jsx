@@ -86,7 +86,7 @@ export default function SideNav({
             <aside className="hidden lg:flex bg-[#0d2148] text-white w-[260px] px-4 pt-6 pb-4 flex-col">
                 <div className="flex items-center justify-between px-1">
                     <Brand brand={brand} />
-                    <button className="text-white/70 hover:text-white rounded-lg px-2 py-1" aria-label="Collapse">«</button>
+                    <button className="text-white/70 hover:text-white rounded-lg px-2 py-1 lg:mt-[-20px]" aria-label="Collapse">«</button>
                 </div>
 
                 <MenuList items={items} active={active} onSelect={go} variant="sidebar" className="mt-6 space-y-2" />
@@ -132,7 +132,7 @@ function NavItem({ Icon, label, active, onClick, variant }) {
 
 function Brand({ brand }) {
     return (
-        <div className="flex items-center gap-2 lg:mt-[60px]">
+        <div className="flex items-center gap-2 lg:mt-[30px]">
             {/* Tile behind the logo (keeps your rounded square look) */}
             <div className="w-16 h-16 grid place-items-center overflow-hidden">
                 <img
